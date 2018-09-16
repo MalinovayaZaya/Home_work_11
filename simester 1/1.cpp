@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int MatrixSM(int a[],int num, int edge){//Матрица смежности
+int MatrixSM(int a[],int num, int edge){//РњР°С‚СЂРёС†Р° СЃРјРµР¶РЅРѕСЃС‚Рё
 cout << "MatrixSM: " << endl;
 int C[num][num];
 for (int i=0;i<num;i++)
@@ -21,7 +21,7 @@ for (int i=0;i<num;i++){
 }
 }
 
-int ListSM(int a[],int num, int edge){ //Список смежности
+int ListSM(int a[],int num, int edge){ //РЎРїРёСЃРѕРє СЃРјРµР¶РЅРѕСЃС‚Рё
 cout << "ListSM: " << endl;
 int C[num];
 for (int i=0;i<num;i++)
@@ -36,7 +36,7 @@ for (int i=0;i<num;i++)
         cout<<i+1<<":["<<C[i]<<"]"<<endl;
 }
 
-int MatrixIC(int a[],int num, int edge){ //Матрица инцидентности
+int MatrixIC(int a[],int num, int edge){ //РњР°С‚СЂРёС†Р° РёРЅС†РёРґРµРЅС‚РЅРѕСЃС‚Рё
 cout << "MatrixIC: " << endl;
 int C[num][edge];
 for (int i=0;i<num;i++)
@@ -57,7 +57,7 @@ for(int i=0;i<edge;i++){
 }
 
 
-int main(){ // Забиваем список
+int main(){ // Р—Р°Р±РёРІР°РµРј СЃРїРёСЃРѕРє СЂРµР±РµСЂ
     int num,edge;
     cout << "Enter the number of vertexes" << endl;
     cin>>num;
@@ -72,4 +72,5 @@ int main(){ // Забиваем список
     ListSM(A,num,edge);
     cout << endl;
     MatrixIC(A,num,edge);
+    return (0);
     }
